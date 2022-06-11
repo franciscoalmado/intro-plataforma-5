@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #2a3b4e;
+    color: white;
+}
+  
+h1{
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    margin: 0.5em auto 0 auto;
+}
+  
+ul{
+    list-style: none;
+}
+  
+input{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+    height: 40px;
+    padding: 0.5em;
+    border-bottom: 1px solid;
+}
+  
+button{
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: #ff1e42;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+  
+button:hover{
+    background: #c3112d;
+}
+  
+.container{
+    background-color: white;
+    color: #1e2432;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    margin-left: 50px;
+    visibility: hidden;
+    margin: 50px auto;
+    margin-bottom: 2em;
+}
+  
+.ciudades{
+    padding: 40px 10%;
+}
+  
+#ciudad{
+    font-size: 2em;
+    color: #717681;
+}
+  
+#temperatura{
+    font-size: 3em;
+    font-weight: bold;
+}
+  
+sup{
+    font-weight: normal;
+    font-size: 2.5em;
+}
+  
+img{
+    width: 35%;
+    height: 35%;
+}
+  
+#descripcion{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #717681;
+}
+  
+.encabezado{
+    text-align: center;
+    margin: 3em auto;
+}
+  
+.texto{
+    width: 12em;
+    margin: 0.5em auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+}
+
+::placeholder {
+    font-family: "Poppins", sans-serif;
+}
+
+.element{
+    margin: auto 20em;
+    border-radius: 2em;
+    background-color: #092454;
+}
+
+@media only screen and (max-width: 37.5em){
+    .element{
+        margin: 1em auto;
+        max-width: 90%;
+    }
+
+    .container{
+        max-width: 80%;
+    }
+
+    input{
+        max-width: 95%;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 38em) and (max-width: 60em){
+    .element{
+        margin: 1em auto;
+        max-width: 90%;
+    }
+
+    .container{
+        max-width: 80%;
+    }
+
+    input{
+        max-width: 95%;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 18em){
+    h1{
+        font-size: 2.2em;
+    }
+
+    input{
+        max-width: 85%;
+        font-size: 0.5em;
+        place-content: 0.5em;
+    }
+
+    ::placeholder {
+        font-size: 0.8em;
+    }
+
+    #temperatura{
+        max-width: 80%;
+        font-size: 2.5em;
+    }
+}
