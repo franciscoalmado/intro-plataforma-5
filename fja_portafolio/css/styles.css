@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #f5f6f7;
+    color: #092454;
+    font-family: "Poppins", sans-serif;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header{
+    padding: 0 1.25em;
+    background-color: #092454;
+    height: 3.125em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#company{
+    font-weight: bold;
+    font-size: 1.125em;
+    display: flex;
+    align-items: center;
+}
+
+#company a{
+    color: #09c372;
+    font-size: 1.5em;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a{
+    color: white;
+}
+
+ul li{
+    padding: 0.3125em;
+    margin-left: 0.625em;
+}
+
+ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#hamburger-icon{
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div{
+    width: 2.1875em;
+    height: 0.1875em;
+    background-color: white;
+    margin: 0.375em 0;
+    transition: 0.4s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-0.375em, 0.375em);
+    transform: rotate(-45deg) translate(-0.375em, 0.375em);
+}
+  
+.open .bar2{
+    opacity: 0;
+}
+  
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-0.375em, -0.5em);
+    transform: rotate(45deg) translate(-0.375em, -0.5em);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #092454;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 3.125em;
+    left: 0;
+    height: calc(100vh - 3.125em);
+    width: 100%;
+}
+
+#identity{
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: #092454;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    color: #092454;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3{
+    color: #092454;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+.title{
+    color: #092454;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10em auto 2em auto;
+}
+
+#briefcase{
+    display: flex;
+    justify-content:space-around;
+
+}
+
+.container{
+    text-align: center;
+}
+
+.color_game{
+    width: 85%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.to_do_list{
+    width: 85%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.weather_channel{
+    width: 85%;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+#resume{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10em 2em 1em 2em;
+    padding: 0 1em 1em 1em;
+    background: url(../img/grid.png), linear-gradient(to right, rgba(0, 126, 174, .85), rgba(26, 193, 187, .85));
+    border-radius: 1em;
+    color: white;
+}
+
+.about_me{
+    color: white;
+    font-weight: bold;
+}
+
+#resume p{
+    text-align: left;
+    margin: 0 5em;
+
+}
+
+.contact{
+    margin: 7em auto 1em auto;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3em 5em 8em 5em;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+input{
+    height: 3em;
+    padding-left: 1.5em;
+}
+
+textarea{
+    resize: none;
+    padding-left: 1.5em;
+    padding-top: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 0.25em;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.8em 1.5em 0.7em;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #2a3b4e;
+}
+
+.personal{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: #092454;
+    margin: auto 1em;
+}
+
+h4{
+    color: white;
+    text-align: center;
+}
+
+.address{
+    color: white;
+    text-align: center;
+}
+
+.social img {
+    width: 2.1875em;
+    height: 2.1875em;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.localization{
+    display: flex;
+    justify-content: center;
+}
+
+.localization a{
+    margin: 0 auto;
+}
+
+.localization img{
+    width: 2.1875em;
+    height: 2.1875em;
+    margin: 0 auto;
+}
+
+.social img {
+    width: 2.1875em;
+    height: 2.1875em;
+    text-align: center;
+    margin: 3em auto;
+}
+
+.social li{
+    list-style: none;
+    text-align: center;
+}
+
+.social a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.end_of_page{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background-color: #092454;
+    margin: auto 1em;
+}
+
+.end_of_page li{
+    list-style: none;
+    text-align: center;
+}
+
+.end_of_page ul{
+    margin: 3em auto;
+}
+
+.end_of_page a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 37.5em){
+    header nav{
+        display: none;
+    }
+
+    #hamburger-icon{
+        display: block;
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    .movile-devices{
+        display: none;
+    }
+
+    .desk{
+        width: 100%;
+    }
+
+    #briefcase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 37.5625em) and (max-width: 56.25em) {
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    .movile-devices{
+        width: 40%;
+        height: auto;
+    }
+}

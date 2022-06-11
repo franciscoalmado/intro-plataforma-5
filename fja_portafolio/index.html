@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>FJA | Web Developer</title>
+</head>
+<body>
+    <header>
+        <div id="company"><a href="index.html">FJA</a></div>
+        <nav>
+            <ul>
+                <li><a href="#briefcase">Portafolio</a></li>
+                <li><a href="#about_me">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#briefcase">Portafolio</a></li>
+                <li><a href="#about_me">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <a href="briefcase"></a>
+    <main>
+        <section id="identity">
+            <img class="desk" src="img/desk.jpg" alt="Desk">
+            <h1>Francisco Javier Almado</h1>
+            <h2>Web Developer</h2>
+        </section>
+        <section>
+            <h3 class="title">Portafolio</h3>
+            <article id="briefcase">
+                <div class="container">
+                    <a href="https://delicate-cat-27302c.netlify.app/" target="_blank"><img class="color_game" src="img/color_game.jpg" alt="Color Game"></a>
+                </div>
+                <div class="container">
+                    <a href="https://wondrous-parfait-8d2d70.netlify.app/" target="_blank"><img class="to_do_list" src="img/to_do_list.jpg" alt="To Do List"></a>
+                </div>
+               <div class="container">
+                   <a href="https://harmonious-meringue-fd4bea.netlify.app/" target="_blank"><img class="weather_channel" src="img/weather_channel.jpg" alt="Weather Channel"></a>
+               </div>    
+            </article>
+        </section>
+        <a href="about_me"></a>
+        <section>
+            <article id="resume">
+                <h3 class="about_me">Sobre mí</h3>
+                <p>Hola, mi nombre es Francisco Almado. Soy desarrollador web front-end. Poseo experiencia en el diseño y desarrollo de sitios web personalizados. Sentite libre de dar un vistazo a mis últimos proyectos en la sección de portafolio.</p>
+            </article>
+        </section>
+        <a href="contacto"></a>
+        <section>
+            <h3 class="contact">Contacto</h3>
+            <article id="form">
+                <form action="https://formspree.io/f/freujavier@hotmail.com" method="post">
+                    <div class="form-container">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-container">
+                        <label for="telefono">Teléfono</label>
+                        <input type="number" id="telefono" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div>
+                    <div class="form-container">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    </div>
+                </form>
+                <button type="submit">Enviar</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="personal">
+            <div>
+                <div class="localization">
+                    <a href="https://goo.gl/maps/BbGSSoWeyUQbmUdk8" target="_blank"><img src="img/localizacion.png" alt=""></a>
+                </div>
+                <p class="address">Ciudad Autónoma de Buenos Aires</p>
+                <p class="address">Argentina</p>
+            </div>
+            <div>
+                <ul class="social">
+                    <li><a href="https://github.com/franciscoalmado" target="_blank" title="Github"><img src="img/github.png" alt="Github"></a></li>
+                    <li><a href="https://www.instagram.com/fjalmado/" target="_blank" title="Instagram"><img src="img/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/falmado" target="_blank" title="Twitter"><img src="img/twitter.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="end_of_page">
+            <div>
+                <ul>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about_me">Sobre mí</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <p class="copyright">Copyright © 2022 Francisco Almado • Web Developer</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>
