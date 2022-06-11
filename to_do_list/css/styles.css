@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #040c41;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin: 2em auto 1em auto;
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;   
+  text-align: center; 
+}
+
+.div{
+  margin-bottom: 1em;
+}
+
+.input {
+  width: 300px;
+  height: 50px;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-agregar {
+  width: 60px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 6, 46);
+  color: white;
+}
+
+.boton-agregar:hover {
+  opacity: 0.9;
+}
+  
+.item-input {
+  width: 250px;
+  height: 50px;
+  padding: 1em;
+  border: solid 1px white;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  background: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.boton-editar {
+  margin: 0px 5px;
+  border: none;
+  background: none;
+  color: #62d0ff;
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+
+.boton-remover {
+  width: 60px;
+  height: 50px;
+  margin: 0px 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 6, 46);
+  font-size: 20px;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 17.5em){
+	h1{
+    font-size: 2em;
+  }
+
+  .input{
+    max-width: 65%;
+    margin-left: 1.7em;
+  }
+
+  .item-input{
+    max-width: 60%;
+    margin-left: 0.9em;
+    font-size: 0.8em;
+  }
+
+  ::placeholder{
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 17.6em) and (max-width: 22.5em){
+	h1{
+    font-size: 2em;
+  }
+
+  .input{
+    max-width: 70%;
+    margin-left: 1.5em;
+  }
+
+  .item-input{
+    max-width: 60%;
+    margin-left: 2.4em;
+    font-size: 0.8em;
+  }
+
+  ::placeholder{
+    font-size: 0.8em;
+  }
+}
