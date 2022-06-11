@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232323;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    color: #fff;
+    background-color: #46b4a2;
+    text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 3em;
+} 
+
+#message{
+    color: #000;
+    display: inline-block;
+	width: 20%;
+	height: auto;
+	line-height: 1.2;
+}
+ 
+.container{
+    width: 375px;
+    display: block;
+    margin: 0 auto;
+}
+
+.square{
+    float: left;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    color: blue;
+    margin-left: 3%;
+    margin-top: 3%;
+	background-color: purple;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	border-radius: 10%;
+	transition: 0.6s;
+}
+
+#stripe{
+    background-color: #fff;
+    height: 60px;
+    text-align: center;
+	color: black;
+}
+
+.selected {
+	background-color: #46b4a2;
+	color: white;
+}
+
+#colorDisplay {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+button {
+	border: none;
+	height: 100%;
+	font-weight: 700;
+	color: #46b4a2;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	outline: none;
+	font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+	color: white;
+	background: #46b4a2;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 37.5em){
+	.container {
+		width: 600px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 37.5em){
+	h1{
+		font-size: 1.3em;
+		max-width: 100%;
+	}
+
+	#reset{
+		font-size: 1em;
+	}
+
+	#message{
+		font-size: 1em;
+
+	}
+
+	.container {
+		max-width: 90%;
+		display: block;
+		margin: 0 auto;
+	}
+
+	#stripe{
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 17.5em){
+	h1{
+		font-size: 1em;
+	}
+}
